@@ -12,9 +12,14 @@ namespace Demos
 		public App ()
 		{
 			InitializeComponent();
+            var mp = new Demos.MainPage();
 
-			MainPage = new Demos.MainPage();
-		}
+            //MainPage = new NavigationPage(mp);
+
+            MainPage = new NavigationPage(new ListPage());
+            
+
+        }
 
 		protected override void OnStart ()
 		{

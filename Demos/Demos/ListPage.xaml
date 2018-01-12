@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Demos.ListPage"
+             Title="SW Planets">
+    <ContentPage.Content>
+        <StackLayout>
+            <Button x:Name="btnLoad" Text="Cargar Lista"/>
+            <ListView x:Name="lst1" >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding name}" Detail="{Binding terrain}"></TextCell>
+                        <!--<TextCell Text="{Binding Descripcion}"></TextCell>-->
+                        <!--<ViewCell>
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="{Binding Descripcion}"/>
+                                <Button Text="Hola" Clicked="btnprueba_clicked" />
+                            </StackLayout>
+                        </ViewCell>-->
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
