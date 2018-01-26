@@ -16,7 +16,7 @@ namespace Demos
 
             //MainPage = new NavigationPage(mp);
 
-            MainPage = new NavigationPage(new ListPage());
+            MainPage = new NavigationPage(new ContratistaListPage());
             
 
         }
